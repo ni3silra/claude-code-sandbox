@@ -1,0 +1,10 @@
+com\example\mq\utils\MqTestConfiguration.class
+com\example\mq\utils\TandemMqTestRunner.class
+com\example\mq\utils\MqProperties.class
+com\example\mq\utils\MqProperties$Connection.class
+com\example\mq\utils\MqConnectionManager.class
+com\example\mq\utils\MqProperties$Retry.class
+com\example\mq\utils\MqTestUtils.class
+com\example\mq\utils\MqProperties$Timeout.class
+META-INF\spring-configuration-metadata.json
+com\example\mq\utils\MqProperties$Queues.class

@@ -1,0 +1,126 @@
+{
+  "groups": [
+    {
+      "name": "mq.test",
+      "type": "com.example.mq.utils.MqProperties",
+      "sourceType": "com.example.mq.utils.MqProperties"
+    },
+    {
+      "name": "mq.test.connection",
+      "type": "com.example.mq.utils.MqProperties$Connection",
+      "sourceType": "com.example.mq.utils.MqProperties",
+      "sourceMethod": "getConnection()"
+    },
+    {
+      "name": "mq.test.queues",
+      "type": "com.example.mq.utils.MqProperties$Queues",
+      "sourceType": "com.example.mq.utils.MqProperties",
+      "sourceMethod": "getQueues()"
+    },
+    {
+      "name": "mq.test.retry",
+      "type": "com.example.mq.utils.MqProperties$Retry",
+      "sourceType": "com.example.mq.utils.MqProperties",
+      "sourceMethod": "getRetry()"
+    },
+    {
+      "name": "mq.test.timeout",
+      "type": "com.example.mq.utils.MqProperties$Timeout",
+      "sourceType": "com.example.mq.utils.MqProperties",
+      "sourceMethod": "getTimeout()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mq.test.connection.channel",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Connection",
+      "defaultValue": "DEV.ADMIN.SVRCONN"
+    },
+    {
+      "name": "mq.test.connection.client-id",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Connection",
+      "defaultValue": "MQ_TEST_CLIENT"
+    },
+    {
+      "name": "mq.test.connection.host",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Connection",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "mq.test.connection.password",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Connection",
+      "defaultValue": "passw0rd"
+    },
+    {
+      "name": "mq.test.connection.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.mq.utils.MqProperties$Connection",
+      "defaultValue": 1414
+    },
+    {
+      "name": "mq.test.connection.queue-manager",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Connection",
+      "defaultValue": "QM1"
+    },
+    {
+      "name": "mq.test.connection.user",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Connection",
+      "defaultValue": "admin"
+    },
+    {
+      "name": "mq.test.queues.dead-letter",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Queues",
+      "defaultValue": "DEV.DEAD.LETTER.QUEUE"
+    },
+    {
+      "name": "mq.test.queues.request",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Queues",
+      "defaultValue": "DEV.QUEUE.1"
+    },
+    {
+      "name": "mq.test.queues.response",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Queues",
+      "defaultValue": "DEV.QUEUE.2"
+    },
+    {
+      "name": "mq.test.queues.test-queue",
+      "type": "java.lang.String",
+      "sourceType": "com.example.mq.utils.MqProperties$Queues",
+      "defaultValue": "TEST.QUEUE"
+    },
+    {
+      "name": "mq.test.retry.delay",
+      "type": "java.lang.Long",
+      "sourceType": "com.example.mq.utils.MqProperties$Retry",
+      "defaultValue": 1000
+    },
+    {
+      "name": "mq.test.retry.max-attempts",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.mq.utils.MqProperties$Retry",
+      "defaultValue": 3
+    },
+    {
+      "name": "mq.test.timeout.receive",
+      "type": "java.lang.Long",
+      "sourceType": "com.example.mq.utils.MqProperties$Timeout",
+      "defaultValue": 5000
+    },
+    {
+      "name": "mq.test.timeout.send",
+      "type": "java.lang.Long",
+      "sourceType": "com.example.mq.utils.MqProperties$Timeout",
+      "defaultValue": 3000
+    }
+  ],
+  "hints": []
+}
