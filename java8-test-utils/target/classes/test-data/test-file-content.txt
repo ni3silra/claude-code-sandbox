@@ -1,0 +1,18 @@
+Test File Content for SFTP Operations
+=====================================
+
+This is a sample file used for testing SFTP operations.
+It contains multiple lines of text to verify file transfer functionality.
+
+Order Processing Data:
+- Order ID: ORD-12345
+- Customer: John Doe
+- Items: 3 products
+- Total: $149.97
+- Status: Processing
+
+File created for automated testing purposes.
+Last modified: 2024-01-15 10:30:00
+Checksum: ABC123DEF456
+
+End of test file content.

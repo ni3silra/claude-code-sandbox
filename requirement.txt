@@ -1,0 +1,21 @@
+**"Act as a Test Architect and Developer.**
+
+I am working on a legacy Java application that uses **Java 8**. The application code does not use any Spring framework. My goal is to create a robust and reusable integration test framework for this application.
+
+Your primary task is to develop a suite of **completely independent test utilities** that use **mocked resources exclusively**. No actual MQ infrastructure, SFTP servers, or physical databases will be used. These utilities should be built using a pure Java 8 approach, leveraging external libraries defined in `pom.xml` to minimize boilerplate code.
+
+**Here are the specific requirements for the test utilities:**
+
+* **MQ Test Utilities:** Create a utility class that can simulate MQ messaging. It should be able to "send" and "receive" messages from a **fake queue**. Use a library like **[A Mock MQ Library]** to achieve this. The setup method for this utility should be able to read a text file to get a pre-defined message payload for testing.
+* **SFTP Test Utilities:** Create another utility class to simulate SFTP operations. It must be able to push and pull files from a **mock SFTP server**. Use a library like **[An Embedded SFTP Server Library]** to achieve this. This utility should use a text file for the test file content.
+* **Database Test Utilities:** Develop a utility class for database operations that uses an **in-memory database** (like H2). This utility should have a clean setup method that can read a text file containing SQL statements to **create tables and insert data** for testing. Use libraries like **JUnit** and a relevant in-memory database library to streamline the process. All kinds of database operations, such as creating, reading, updating, and deleting data, should be supported.
+* **Code Quality:** The setup and teardown methods for all utilities must be neat and clean. The overall design should prioritize code reusability across multiple test classes.
+
+Finally, create a single, **dummy program** that demonstrates how to use all three of these utilities together in a test case. This program should:
+1.  Use the database utility to create a table and insert some initial data.
+2.  Use the MQ utility to write a message.
+3.  Use the SFTP utility to push a file.
+4.  Use the SFTP utility to get the file and verify its contents.
+5.  Use the database utility again to verify that the initial data was correctly processed or modified."
+
+This prompt now explicitly directs the AI agent to use Java 8 and third-party libraries via `pom.xml` instead of relying on any Spring framework features. It also suggests specific types of libraries to guide the agent toward the right tools for mocking each external system.

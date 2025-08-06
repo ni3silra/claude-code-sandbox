@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.testutils.AllUtilitiesTest" time="6.869" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Nitin Silra\claude-project-sandbox\java8-test-utils\target\test-classes;C:\Users\Nitin Silra\claude-project-sandbox\java8-test-utils\target\classes;C:\Users\Nitin Silra\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Nitin Silra\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Nitin Silra\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Nitin Silra\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\sshd\sshd-sftp\2.12.0\sshd-sftp-2.12.0.jar;C:\Users\Nitin Silra\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Nitin Silra\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\sshd\sshd-core\2.12.0\sshd-core-2.12.0.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\sshd\sshd-common\2.12.0\sshd-common-2.12.0.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\activemq-broker\5.17.6\activemq-broker-5.17.6.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\activemq-client\5.17.6\activemq-client-5.17.6.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\geronimo\specs\geronimo-jms_1.1_spec\1.1.1\geronimo-jms_1.1_spec-1.1.1.jar;C:\Users\Nitin Silra\.m2\repository\org\fusesource\hawtbuf\hawtbuf\1.11\hawtbuf-1.11.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\activemq-openwire-legacy\5.17.6\activemq-openwire-legacy-5.17.6.jar;C:\Users\Nitin Silra\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Nitin Silra\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Nitin Silra\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Nitin Silra\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\activemq-kahadb-store\5.17.6\activemq-kahadb-store-5.17.6.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\protobuf\activemq-protobuf\1.1\activemq-protobuf-1.1.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\geronimo\specs\geronimo-j2ee-management_1.1_spec\1.0.1\geronimo-j2ee-management_1.1_spec-1.0.1.jar;C:\Users\Nitin Silra\.m2\repository\com\jcraft\jsch\0.1.55\jsch-0.1.55.jar;C:\Users\Nitin Silra\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;C:\Users\Nitin Silra\.m2\repository\javax\jms\javax.jms-api\2.0.1\javax.jms-api-2.0.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="user.country.format" value="DE"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\NITINS~1\AppData\Local\Temp\surefire6076046566904784360\surefirebooter6040948571383869573.jar C:\Users\Nitin Silra\AppData\Local\Temp\surefire6076046566904784360 2025-08-05T23-46-52_719-jvmRun1 surefire906180329641002262tmp surefire_04411146929939902761tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Nitin Silra\claude-project-sandbox\java8-test-utils\target\test-classes;C:\Users\Nitin Silra\claude-project-sandbox\java8-test-utils\target\classes;C:\Users\Nitin Silra\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Nitin Silra\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\Nitin Silra\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Nitin Silra\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\sshd\sshd-sftp\2.12.0\sshd-sftp-2.12.0.jar;C:\Users\Nitin Silra\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Nitin Silra\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\sshd\sshd-core\2.12.0\sshd-core-2.12.0.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\sshd\sshd-common\2.12.0\sshd-common-2.12.0.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\activemq-broker\5.17.6\activemq-broker-5.17.6.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\activemq-client\5.17.6\activemq-client-5.17.6.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\geronimo\specs\geronimo-jms_1.1_spec\1.1.1\geronimo-jms_1.1_spec-1.1.1.jar;C:\Users\Nitin Silra\.m2\repository\org\fusesource\hawtbuf\hawtbuf\1.11\hawtbuf-1.11.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\activemq-openwire-legacy\5.17.6\activemq-openwire-legacy-5.17.6.jar;C:\Users\Nitin Silra\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Nitin Silra\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Nitin Silra\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Nitin Silra\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\activemq-kahadb-store\5.17.6\activemq-kahadb-store-5.17.6.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\activemq\protobuf\activemq-protobuf\1.1\activemq-protobuf-1.1.jar;C:\Users\Nitin Silra\.m2\repository\org\apache\geronimo\specs\geronimo-j2ee-management_1.1_spec\1.0.1\geronimo-j2ee-management_1.1_spec-1.0.1.jar;C:\Users\Nitin Silra\.m2\repository\com\jcraft\jsch\0.1.55\jsch-0.1.55.jar;C:\Users\Nitin Silra\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;C:\Users\Nitin Silra\.m2\repository\javax\jms\javax.jms-api\2.0.1\javax.jms-api-2.0.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Nitin Silra"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Nitin Silra\claude-project-sandbox\java8-test-utils"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\NITINS~1\AppData\Local\Temp\surefire6076046566904784360\surefirebooter6040948571383869573.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
+    <property name="user.name" value="Nitin Silra"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Nitin Silra\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\NITINS~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="C:\Users\Nitin Silra\claude-project-sandbox\java8-test-utils"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\Nitin Silra\Videos\KEAASZ-1.33.0-portable-linux-x64-jre\jre1.8.0_144\bin;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Nitin Silra\.local\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\Nitin Silra\AppData\Local\Microsoft\WindowsApps;C:\Users\Nitin Silra\AppData\Roaming\npm;C:\Users\Nitin Silra\AppData\Local\GitHubDesktop\bin;C:\Users\Nitin Silra\Videos\KEAASZ-1.33.0-portable-linux-x64-jre\jre1.8.0_144\bin;C:\Users\Nitin Silra\AppData\Local\Programs\Windsurf\bin;C:\Users\Nitin Silra\AppData\Local\Programs\Kiro\bin;C:\Users\Nitin Silra\OneDrive\Documents\maven-mvnd-1.0.2-windows-amd64\maven-mvnd-1.0.2-windows-amd64\bin;C:\Users\Nitin Silra\OneDrive\Documents\maven-mvnd-1.0.2-windows-amd64\maven-mvnd-1.0.2-windows-amd64\mvn\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testMQUtility" classname="com.example.testutils.AllUtilitiesTest" time="2.127"/>
+  <testcase name="testUtilityConnections" classname="com.example.testutils.AllUtilitiesTest" time="1.121"/>
+  <testcase name="testSFTPUtility" classname="com.example.testutils.AllUtilitiesTest" time="1.215"/>
+  <testcase name="testDatabaseUtility" classname="com.example.testutils.AllUtilitiesTest" time="1.183"/>
+  <testcase name="testIntegratedWorkflow" classname="com.example.testutils.AllUtilitiesTest" time="1.156"/>
+</testsuite>

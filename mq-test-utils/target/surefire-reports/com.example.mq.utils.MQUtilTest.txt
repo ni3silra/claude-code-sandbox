@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.mq.utils.MQUtilTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 15, Time elapsed: 1.758 s -- in com.example.mq.utils.MQUtilTest
