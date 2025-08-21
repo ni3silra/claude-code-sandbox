@@ -52,6 +52,7 @@
     <modules>
         <module>mq-test-utils</module>
         <module>java8-test-utils</module>
+        <module>xml-to-java-converter</module>
     </modules>
 
     <dependencyManagement>

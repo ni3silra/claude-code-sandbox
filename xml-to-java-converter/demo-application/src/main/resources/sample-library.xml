@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <books>
+        <book id="1">
+            <title>Java Programming</title>
+            <authors>
+                <author id="101">
+                    <name>John Doe</name>
+                    <email>john@example.com</email>
+                </author>
+                <author id="102">
+                    <name>Jane Smith</name>
+                    <email>jane@example.com</email>
+                </author>
+            </authors>
+            <categories>
+                <category>Programming</category>
+                <category>Java</category>
+            </categories>
+        </book>
+        <book id="2">
+            <title>Spring Framework</title>
+            <authors>
+                <author id="101">
+                    <name>John Doe</name>
+                    <email>john@example.com</email>
+                </author>
+            </authors>
+            <categories>
+                <category>Programming</category>
+                <category>Framework</category>
+            </categories>
+        </book>
+    </books>
+    <authors>
+        <author id="101">
+            <name>John Doe</name>
+            <email>john@example.com</email>
+            <biography>Experienced Java developer</biography>
+        </author>
+        <author id="102">
+            <name>Jane Smith</name>
+            <email>jane@example.com</email>
+            <biography>Spring Framework expert</biography>
+        </author>
+    </authors>
+</library>

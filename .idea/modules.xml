@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mq-test-utils/mq-test-utils.iml" filepath="$PROJECT_DIR$/mq-test-utils/mq-test-utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mq-testing-app.iml" filepath="$PROJECT_DIR$/mq-testing-app.iml" />
     </modules>
   </component>
 </project>

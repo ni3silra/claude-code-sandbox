@@ -1,0 +1,17 @@
+xml-converter:
+  detection:
+    similarity-threshold: 0.8
+    min-occurrence-count: 2
+    relationship-confidence: 0.7
+  generation:
+    package-name: "com.generated.model"
+    use-lombok: true
+    generate-builders: true
+  mapping:
+    ignore-attributes: false
+    handle-namespaces: true
+
+logging:
+  level:
+    com.aixml: DEBUG
+    root: INFO

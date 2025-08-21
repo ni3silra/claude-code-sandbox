@@ -6,5 +6,17 @@
     <file url="file://$PROJECT_DIR$/mq-test-utils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/demo-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/demo-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/mapping-engine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/mapping-engine/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/object-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/object-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/relationship-detector/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/relationship-detector/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/xml-analyzer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xml-to-java-converter/xml-analyzer/src/main/resources" charset="UTF-8" />
   </component>
 </project>

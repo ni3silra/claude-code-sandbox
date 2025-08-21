@@ -2,12 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="xml-analyzer" />
         <module name="mq-test-utils" />
         <module name="java8-test-utils" />
+        <module name="relationship-detector" />
+        <module name="object-generator" />
+        <module name="mapping-engine" />
+        <module name="demo-application" />
       </profile>
     </annotationProcessing>
   </component>
