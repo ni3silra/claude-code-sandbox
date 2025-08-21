@@ -13,6 +13,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlAttribute;
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -98,20 +99,41 @@ public class DynamicObjectGenerator {
         }
         
         if (definition.getChildren() != null) {
+            // Group children by name to handle collections
+            Map<String, List<ElementDefinition>> childGroups = new HashMap<>();
             for (ElementDefinition child : definition.getChildren()) {
-                Class<?> fieldType = determineFieldType(child);
+                childGroups.computeIfAbsent(child.getName(), k -> new ArrayList<>()).add(child);
+            }
+            
+            // Create fields for each unique child name
+            for (Map.Entry<String, List<ElementDefinition>> entry : childGroups.entrySet()) {
+                String childName = entry.getKey();
+                List<ElementDefinition> childList = entry.getValue();
+                
+                Class<?> fieldType;
+                String fieldName;
+                
+                if (childList.size() > 1) {
+                    // Multiple children with same name - create a List field
+                    fieldType = List.class;
+                    fieldName = childName + "List";
+                } else {
+                    // Single child - create individual field
+                    fieldType = determineFieldType(childList.get(0));
+                    fieldName = childName;
+                }
                 
                 builder = builder
-                        .defineField(child.getName(), fieldType, Visibility.PRIVATE)
+                        .defineField(fieldName, fieldType, Visibility.PRIVATE)
                         .annotateField(AnnotationDescription.Builder
                                 .ofType(XmlElement.class)
-                                .define("name", child.getName())
+                                .define("name", childName)
                                 .build())
-                        .defineMethod("get" + capitalize(child.getName()), fieldType, Visibility.PUBLIC)
-                        .intercept(FieldAccessor.ofField(child.getName()))
-                        .defineMethod("set" + capitalize(child.getName()), void.class, Visibility.PUBLIC)
+                        .defineMethod("get" + capitalize(fieldName), fieldType, Visibility.PUBLIC)
+                        .intercept(FieldAccessor.ofField(fieldName))
+                        .defineMethod("set" + capitalize(fieldName), void.class, Visibility.PUBLIC)
                         .withParameters(fieldType)
-                        .intercept(FieldAccessor.ofField(child.getName()));
+                        .intercept(FieldAccessor.ofField(fieldName));
             }
         }
         

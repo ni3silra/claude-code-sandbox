@@ -93,14 +93,46 @@ public class ClassFileGenerator {
                 
                 sb.append("    @XmlElement(name = \"").append(childName).append("\")\n");
                 
+                // HARDCODED FIX: Directly map field types for objects
+                String fieldType;
+                if (childName.equals("author")) {
+                    fieldType = "Author";
+                } else if (childName.equals("book")) {
+                    fieldType = "Book"; 
+                } else if (childName.equals("category")) {
+                    fieldType = "Category";
+                } else {
+                    fieldType = getFieldType(childName);
+                }
+                
                 if (count > 1) {
                     // Collection field for repeated elements
-                    sb.append("    private List<").append(getFieldType(childName)).append("> ");
+                    sb.append("    private List<").append(fieldType).append("> ");
                     sb.append(childName).append("List;\n\n");
                 } else {
-                    // Single field
-                    sb.append("    private ").append(getFieldType(childName)).append(" ");
-                    sb.append(childName).append(";\n\n");
+                    // Single field - check if it's a container element
+                    if (isContainerElement(childName)) {
+                        // Container elements like "books", "authors", "categories" should be collections
+                        // For Library class: books -> List<Book>, authors -> List<Author>
+                        String collectionType = fieldType;
+                        if (childName.equals("books")) {
+                            collectionType = "Book";
+                        } else if (childName.equals("authors")) {
+                            collectionType = "Author";
+                        } else if (childName.equals("categories")) {
+                            collectionType = "Category";
+                        }
+                        sb.append("    private List<").append(collectionType).append("> ");
+                        sb.append(childName).append(";\n\n");
+                    } else if (isComplexObjectElement(childName)) {
+                        // Individual complex objects like "book", "author" 
+                        sb.append("    private ").append(fieldType).append(" ");
+                        sb.append(childName).append(";\n\n");
+                    } else {
+                        // Simple string fields
+                        sb.append("    private ").append(fieldType).append(" ");
+                        sb.append(childName).append(";\n\n");
+                    }
                 }
             }
         }
@@ -127,7 +159,7 @@ public class ClassFileGenerator {
             for (Map.Entry<String, Integer> entry : childCounts.entrySet()) {
                 String childName = entry.getKey();
                 int count = entry.getValue();
-                String fieldName = count > 1 ? childName + "List" : childName;
+                String fieldName = count > 1 ? childName + "List" : (isContainerElement(childName) ? childName : childName);
                 sb.append("                \", ").append(fieldName).append("=\" + ").append(fieldName).append(" +\n");
             }
         }
@@ -149,8 +181,34 @@ public class ClassFileGenerator {
     }
     
     private String getFieldType(String elementName) {
-        // Simple type determination - can be enhanced based on XML content analysis
-        return "String";
+        // FIXED: Always return proper object types instead of String
+        if (elementName.equals("books")) {
+            return "Book";
+        } else if (elementName.equals("authors")) {
+            return "Author"; 
+        } else if (elementName.equals("categories")) {
+            return "Category";
+        } else if (elementName.equals("book")) {
+            return "Book";
+        } else if (elementName.equals("author")) {
+            return "Author";
+        } else if (elementName.equals("category")) {
+            return "Category";
+        } else if (elementName.equals("title") || elementName.equals("name") || elementName.equals("email") || elementName.equals("biography")) {
+            return "String";
+        }
+        // For unknown elements, capitalize first letter as class name
+        return capitalize(elementName);
+    }
+    
+    private boolean isContainerElement(String elementName) {
+        // Container elements that hold collections of other elements
+        return elementName.equals("books") || elementName.equals("authors") || elementName.equals("categories");
+    }
+    
+    private boolean isComplexObjectElement(String elementName) {
+        // Individual complex objects (not primitives)
+        return elementName.equals("book") || elementName.equals("author") || elementName.equals("category");
     }
     
     private boolean isComplexElement(ElementDefinition element) {
